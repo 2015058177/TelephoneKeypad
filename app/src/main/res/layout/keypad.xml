@@ -2,115 +2,226 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
-        android:ems="20"
-        android:inputType="number"
-        android:text="tel:"
-        tools:layout_editor_absoluteY="238dp"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <ImageButton
-        android:id="@+id/keypad4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad4"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keypad1" />
-
-    <ImageButton
-        android:id="@+id/keypad7"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad7"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <ImageButton
-        android:id="@+id/keypadstar"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypadstar"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="178dp" />
-
-    <ImageButton
-        android:id="@+id/keypad6"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad6"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="60dp" />
-
-    <ImageButton
-        android:id="@+id/keypad8"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad8"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <ImageButton
-        android:id="@+id/keypad9"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad9"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <ImageButton
-        android:id="@+id/keypad0"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad0"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="178dp" />
-
-    <ImageButton
-        android:id="@+id/keypadsharp"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypadsharp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="178dp" />
-
-    <ImageButton
-        android:id="@+id/keypad1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/keypad5"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad5"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="60dp" />
-
-    <ImageButton
-        android:id="@+id/keypad2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad2"
-        app:layout_constraintLeft_toRightOf="@+id/keypad1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/keypad3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/keypad3"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toRightOf="@+id/keypad2"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/keypad1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/keypad2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keypad3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/keypad3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/keypad2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/keypad2"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/keypad3"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.444">
+
+        <ImageButton
+            android:id="@+id/keypad4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/keypad5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keypad5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/keypad6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keypad6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageButton
+            android:id="@+id/keypad7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/keypad8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keypad8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/keypad9"
+            />
+
+        <ImageButton
+            android:id="@+id/keypad9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/constraintLayout4">
+
+        <ImageButton
+            android:id="@+id/keypadsharp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypadsharp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keypad0"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypad0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/keypadstar"
+            app:layout_constraintRight_toLeftOf="@+id/keypadsharp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/keypadstar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/keypadstar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp" />
+
 </android.support.constraint.ConstraintLayout>

@@ -20,12 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FloatingService"/>
-        <activity android:name=".FloatingKeypadService"/>
+
         <service android:name=".FloatingKeypadView"
-            android:enabled="true"
-            android:exported="false"/>
-        <service
-            android:name=".FloatingView"
             android:enabled="true"
             android:exported="false"/>
     </application>

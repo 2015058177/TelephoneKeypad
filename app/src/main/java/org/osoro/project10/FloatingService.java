@@ -39,7 +39,7 @@ public class FloatingService extends AppCompatActivity{
     }
 
     private void initializeView() {
-        startService(new Intent(this, FloatingView.class));
+        startService(new Intent(this, FloatingKeypadView.class));
         finish();
     }
 
