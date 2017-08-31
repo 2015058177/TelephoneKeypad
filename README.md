@@ -14,5 +14,3 @@ This app is designed to be kept getting information while doing other works. Whe
 
 =======
 
-#### test
->>>>>>> develop
